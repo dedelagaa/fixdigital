@@ -165,6 +165,9 @@ return [
         /*
          * Package Service Providers...
          */
+        
+        // Package Login With Google OAuth
+        Laravel\Socialite\SocialiteServiceProvider::class,
 
         /*
          * Application Service Providers...
@@ -230,6 +233,8 @@ return [
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
 
+        // Package Login With Google OAuth
+        'Socialite' => Laravel\Socialite\Facades\Socialite::class,
     ],
 
 ];
