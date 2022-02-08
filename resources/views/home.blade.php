@@ -1,7 +1,7 @@
-@extends('layouts.app')
+@extends('layouts.main', ["title" => "Dashboard"])
 
 @section('content')
-<div class="container">
+<div class="container-fluid">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
@@ -14,7 +14,7 @@
                         </div>
                     @endif
 
-                    {{ __('You are logged in!') }}
+                    {{ __('You are logged in!') }} - <span class="badge rounded-pill bg-success">{{ auth()->user()->name }}</span>
                 </div>
             </div>
         </div>
